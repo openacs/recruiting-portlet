@@ -19,7 +19,7 @@
 %>
 
 <if @new_interviews@ ne 0>
-  <li>You have <a href=@url@my-new-interviews>@num_interviews@
+  <li>You have <a href=@url@my-new-interviews>@new_interviews@
   candidate interviews</a> to complete.
 </if>
 <if @old_interviews@ ne 0>

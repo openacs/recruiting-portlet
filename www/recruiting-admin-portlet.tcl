@@ -51,13 +51,13 @@ db_1row get_pending_interviews {}
 db_1row get_num_archived_candidates {}
 
 if {$status_types_defined_p != 0} {
-    set candidate_admin_link "(<a href=${url}list-candidates>candidate administration</a>)"
+    set candidate_admin_link "(<a href=${url}admin/list-candidates>candidate administration</a>)"
 } else {
     set candidate_admin_link ""
 }
 
 if {$pending_interviews != 0} {
-    set view_interviews_link "(<a href=\"${url}list-interviews\">view interviews</a>)"
+    set view_interviews_link "(<a href=\"${url}admin/list-interviews\">view interviews</a>)"
 } else {
     set view_interviews_link ""
 }
