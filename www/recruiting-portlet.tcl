@@ -23,7 +23,7 @@ if {[llength $list_of_package_ids] > 1} {
     return -code error "There should be only one instance of forums for admin purposes"
 }
 
-set user_id [ad_verify_and_get_user_id]
+set user_id [ad_conn user_id]
 set package_id [lindex $list_of_package_ids 0]
 
 set url [lindex [site_node::get_url_from_object_id -object_id $package_id] 0]
